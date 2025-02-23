@@ -1,5 +1,7 @@
 # Azure Subscription Security Inspector
 
+Repository link: https://github.com/p4pryk/AzureSubscriptionSecurityInspector
+
 A simple tool that analyzes security settings across your Azure subscriptions. It uses REST calls and Azure Resource Graph to gather information about Microsoft Defender status, security recommendations, and RBAC configurations.
 
 ![image](https://github.com/user-attachments/assets/fe34340f-b71f-4191-a0dd-3a2519d1b60f)
