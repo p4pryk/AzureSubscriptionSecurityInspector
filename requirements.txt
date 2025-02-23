@@ -1,0 +1,4 @@
+requests
+python-dotenv
+azure-identity
+azure-mgmt-resourcegraph
