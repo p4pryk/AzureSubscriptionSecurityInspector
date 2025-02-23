@@ -20,6 +20,22 @@ A simple tool that analyzes security settings across your Azure subscriptions. I
   - azure-identity  
   - azure-mgmt-resourcegraph  
 
+## Required Permissions
+
+Before running the script, ensure your service principal has the following permissions:
+
+1. **Directory.Read.All**  
+   - Needed to enumerate and read properties of Azure AD resources (e.g., applications, roles, etc.).
+
+2. **User.ReadWrite**  
+   - Required if you plan on making updates to certain user or directory objects.  
+   - If you only need read access, consider using a more restrictive permission like `User.Read`.
+
+3. **Security Reader** (assigned at the Management Group level)  
+   - Allows the script to read security-related data across all subscriptions in the tenant, ensuring you have visibility into Defender statuses and security recommendations in each subscription.
+
+Make sure you grant these permissions securely and only to the principal (service principal or user) that needs them.  
+
 ## Installation and Usage
 
 1. **Clone or download the repository:**
